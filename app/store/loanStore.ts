@@ -1,17 +1,5 @@
 import { create } from "zustand";
-
-enum Status {
-  Pending = "Pending",
-  UnderReview = "Under Review",
-  Approved = "Approved",
-  Rejected = "Rejected",
-}
-
-type StatusHistory = {
-  status: Status;
-  timestamp: string;
-  notes: string;
-};
+import { Status, StatusHistory } from "../types";
 
 type LoanStore = {
   id: string;
@@ -26,7 +14,7 @@ type LoanStore = {
   statusHistory: Array<StatusHistory>;
 };
 
-const useLoanStore = create<LoanStore>(() => ({
+const initialState = {
   id: "APP-2024-001",
   applicationName: "Sarah Mitchell",
   loanAmout: 250000,
@@ -43,6 +31,8 @@ const useLoanStore = create<LoanStore>(() => ({
       notes: "Application submitted",
     },
   ],
-}));
+};
+
+const useLoanStore = create<LoanStore>(() => initialState);
 
 export default useLoanStore;

@@ -6,7 +6,7 @@ export default function AppBar() {
   return (
     <div className="border-b border-gray-300 px-6 py-2">
       <Image
-        src="/ume-logo.webp"
+        src="/logo.webp"
         alt="UME Logo"
         width={120}
         height={48}

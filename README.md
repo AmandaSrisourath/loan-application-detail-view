@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/AmandaSrisourath/loan-application-detail-view/blob/master/public/UME-logo.webp" alt="UME logo">
+  <img src="https://github.com/AmandaSrisourath/loan-application-detail-view/blob/master/public/ume-logo.webp" alt="UME Logo">
 </div>
 
 # Loan Application Detail View

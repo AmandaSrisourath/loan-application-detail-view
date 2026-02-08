@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="https://github.com/AmandaSrisourath/loan-application-detail-view/blob/master/public/UME-logo.webp" alt="UME logo">
+</div>
+
 # Loan Application Detail View
 
 Loan application management interface built with Next.js, Zustand, and Shadcn UI. Displays applicant and loan details with a status management system.

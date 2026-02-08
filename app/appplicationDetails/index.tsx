@@ -60,7 +60,7 @@ export default function ApplicationDetails() {
   ];
 
   const statusStyles = {
-    [Status.Pending]: "bg-gray-50 text-gray-600",
+    [Status.Pending]: "bg-gray-100 text-gray-600",
     [Status.UnderReview]: "bg-blue-50 text-blue-600",
     [Status.Approved]: "bg-green-50 text-green-600",
     [Status.Rejected]: "bg-red-50 text-red-600",

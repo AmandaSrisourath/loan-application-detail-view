@@ -20,7 +20,7 @@ export default function StatusActions({
     return (
       <div className="flex justify-end">
         <Button
-          variant="secondary"
+          variant="outline"
           onClick={() => {
             setStatus(Status.UnderReview);
             toast.info("Application under review!");
@@ -37,7 +37,7 @@ export default function StatusActions({
     return (
       <div className="flex justify-end gap-2">
         <Button
-          variant="secondary"
+          variant="outline"
           onClick={() => {
             setStatus(Status.Approved);
             toast.success("Application approved!");
@@ -48,7 +48,7 @@ export default function StatusActions({
         </Button>
 
         <Button
-          variant="secondary"
+          variant="outline"
           onClick={() => {
             setStatus(Status.Rejected);
             toast.error("Application rejected!");

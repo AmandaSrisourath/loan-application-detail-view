@@ -4,7 +4,7 @@ import { Status, StatusHistory } from "../types";
 type LoanStore = {
   id: string;
   applicationName: string;
-  loanAmout: number;
+  loanAmount: number;
   loanPurpose: string;
   annualIncome: number;
   employmentStatus: string;
@@ -12,12 +12,13 @@ type LoanStore = {
   applicationDate: string;
   currentStatus: Status;
   statusHistory: Array<StatusHistory>;
+  setStatus: (status: Status) => void;
 };
 
 const initialState = {
   id: "APP-2024-001",
   applicationName: "Sarah Mitchell",
-  loanAmout: 250000,
+  loanAmount: 250000,
   loanPurpose: "Home Purchase",
   annualIncome: 95000,
   employmentStatus: "Full-time",
@@ -33,6 +34,20 @@ const initialState = {
   ],
 };
 
-const useLoanStore = create<LoanStore>(() => initialState);
+const useLoanStore = create<LoanStore>((set) => ({
+  ...initialState,
+  setStatus: (status: Status) =>
+    set((state) => ({
+      currentStatus: status,
+      statusHistory: [
+        ...state.statusHistory,
+        {
+          status,
+          timestamp: new Date().toISOString(),
+          notes: `Status changed to ${status}`,
+        },
+      ],
+    })),
+}));
 
 export default useLoanStore;

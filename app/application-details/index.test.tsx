@@ -2,7 +2,7 @@ import "@testing-library/jest-dom";
 import { cleanup, render, screen } from "@testing-library/react";
 import { userEvent } from "@testing-library/user-event";
 import { afterEach, beforeEach, describe, expect, it } from "bun:test";
-import useLoanStore from "../store/loanStore";
+import useLoanStore from "../store/loan-store";
 import { Status } from "../types";
 import ApplicationDetails from "./index";
 

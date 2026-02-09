@@ -3,10 +3,10 @@
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import useLoanStore from "../store/loanStore";
+import useLoanStore from "../store/loan-store";
 import { Status } from "../types";
-import CardDetails, { Field } from "./CardDetails";
-import StatusActions from "./StatusActions";
+import CardDetails, { Field } from "./components/card-details";
+import StatusActions from "./components/status-actions";
 
 export default function ApplicationDetails() {
   const {

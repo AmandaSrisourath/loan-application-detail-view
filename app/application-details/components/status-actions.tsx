@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Check, FileSearch, X } from "lucide-react";
 import { toast } from "sonner";
-import { Status } from "../types";
+import { Status } from "../../types";
 
 type StatusActionsProps = {
   currentStatus: Status;

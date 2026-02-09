@@ -1,7 +1,7 @@
 "use client";
 
-import AppBar from "./AppBar";
-import ApplicationDetails from "./appplicationDetails";
+import AppBar from "../components/ui/app-bar";
+import ApplicationDetails from "./application-details";
 
 export default function Home() {
   return (

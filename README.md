@@ -17,6 +17,12 @@ bun run dev
 
 Open [http://localhost:3000](http://localhost:3000)
 
+Run test:
+
+```bash
+bun test
+```
+
 Build for production:
 
 ```bash
